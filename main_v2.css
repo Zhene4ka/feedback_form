@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.range {
+    display: inline-block;
+}
+
+fieldset {
+    border: 1.5px solid black;
+    border-radius: 6px;
+    margin: .5rem;
+    padding: .5rem;
+    }
+
+#outer {
+    border: 2px solid #bbb;
+    border-radius: 11px;
+    box-shadow: 0 0 15px #777;
+    width: 530px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;    
+}
+
+input {
+    padding: .25rem;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    margin: .5rem 0;
+    width: 75%;
+}
+
+span {
+  display: block; 
+}
+
+.w50 {
+    display: inline-block;
+    width: 49.5%;
+}
+
+.first input {
+    padding: .5rem .25rem;
+}
+
+#div_w30 {
+    display: inline-block;
+    width: 29%;
+}
+
+#div_w70 {
+    display: inline-block;
+    width: 70%;
+}
+
+#input_w35 {
+    display: inline-block;
+    width: 88%;
+}
+
+#input_w70 {
+    width: 70%;
+    padding: .125rem;
+}
+
+.select_w70 {
+    width: 70%;
+    margin: .5rem 0;
+    border-radius: 3px;
+    padding: .125rem;
+}
+
+#select_w94 {
+    width: 94%;
+    margin: .5rem 0;
+}
+
+#input_w10 {
+    width: 13%;
+    text-align: center;
+}
+
+textarea {
+    padding: .25rem;
+    border-radius: 3px;
+    border: 1px solid #bbb;
+    width: 95%;
+    margin: .5rem 0;
+    height: 5rem;
+}
+
+input[type="range"]{
+    width: 65%;
+}
+
+#bottom {
+    text-align: center;
+    width:100%;
+}
+
+button {
+    color: white;
+    background-color: #005;
+    border-radius: 3px;
+    border: 1px solid #005;
+    padding: .25rem .5rem;
+    margin: .3rem;
+}
+
+p  .name_class 

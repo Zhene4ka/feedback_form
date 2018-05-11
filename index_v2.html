@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Форма отзыва</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main_v2.css">
+    </head>
+    <body>
+        <form name="feedback_form">
+            <p>Форма отзыва</p>
+            <fieldset id='outer'>
+                <fieldset>
+                    <legend>Личные данные</legend>
+                    <div class='w50 first'>
+                        <span>ID отзыва</span>
+                        <input type="number" name="feedback_id" value="12345" disabled>
+                    </div>
+                    <div class='w50 first'>
+                        <span>Имя путешественника</span>
+                        <input type="text" name="traveler_name" value="Кекс">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Отзыв о поездке</legend>
+                    <div class='w50'>
+                        <span>Страна визита</span>
+                        <input type="text" name="country_visit" value="Норвегия" id='input_w70'>
+                    </div>
+                    <div class='w50'>
+                        <span>Город</span>
+                        <select class='select_w70'>
+                            <option>Осло</option>
+                            <option>Берген</option>
+                            <option>Тронхейм</option>
+                        </select>
+                    </div>                    
+                    <div>
+                        <div class='w50' >                    
+                            Оценка поездки
+                        </div>
+                        <div class='w50' >                    
+                            <input type="text" name="travel_evaluation" value="10" id='input_w10' oninput='range.value=input_w10.value'>
+                        </div>                
+                    </div>
+                    <div class='w50' >                    
+                        <span class="range">0</span>
+                        <input type="range" name="travel_evaluation" min='0' max='10' value="10" id='range' oninput='input_w10.value=range.value'>
+                        <span class="range">10</span>                       
+                    </div>                    
+                    <div>
+                        <span>Текст отзыва</span>
+                        <textarea>Это было просто мяу!</textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                <legend>Оценка отеля</legend>
+                    <div class='w50 first'>
+                        <span>Название отеля</span>
+                        <input type="text" name="hotel_name" placeholder="Название по-английски">
+                    </div>
+                    <div class='w50 first'>
+                        Дата въезда
+                        <input type="text" name="arrival_date" placeholder="В формате дд-мм-гггг">
+                    </div>
+                    <div id='div_w30' class="first">
+                        <span>Цвет кроватки</span>
+                        <input type="text" name="bed" value="#ff0000" id='input_w35'>
+                    </div>
+                    <div id='div_w70'>
+                        <span>Оценка обедов</span>
+                        <select class='select_w70'>
+                            <option>Подушечки оближешь</option>
+                            <option>Вкусно</option>
+                            <option>Не очень</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Самая вкусная рыба</span>
+                        <select size=5 multiple id='select_w94'>
+                            <option selected>Норвежский лосось</option>
+                            <option>Зубатка</option>
+                            <option selected>Морской окунь</option>
+                            <option>Карась</option>
+                            <option>Зеркальный карп</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <div id='bottom'>
+                    <button>Оценить</button>
+                    <button>Сбросить</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
